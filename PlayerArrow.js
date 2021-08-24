@@ -30,14 +30,5 @@ class PlayerArrow {
         imageMode(CENTER);
         image(this.image, 0, 0, this.width, this.height);
         pop();
-
-        if(this.body.velocity.x>0&&this.body.position.x>300){
-          var position=[this.body.position.x,this.body.position.y]
-          this.tragectory.push(position)
-        }
-        for(var i=0;i<this.tragectory.length;i++){
-          image(this.image,this.tragectory[i][0],this.tragectory[i][1],5,5)
-        
-    } 
   }
 }
